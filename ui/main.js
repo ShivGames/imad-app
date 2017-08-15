@@ -4,12 +4,13 @@ function makeText() {
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-  for (var i = 0; i < 5; i++)
+  for (var i = 0; i < 20; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-  return text;
+  return "New String: " + text;
 }
 
 function ChangeText() {
     var text = makeText();
+    document.getElementById("").innerHTML = "";
 }
