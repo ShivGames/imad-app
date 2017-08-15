@@ -5,11 +5,30 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+function createTemplate(data) {
+    var title = data.title;
+    var heading = data.heading;
+    var content = data.content;
+    
+    var html = `
+        <html>
+            <head>
+                <title>${title}</title>
+            </head>
+        </html>
+    `;
+
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/articleOne.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/articleTwo.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
@@ -28,7 +47,4 @@ app.get('/ui/madi.png', function (req, res) {
 var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
-  console.log(`Express = ${express}`);
-  console.log(`Morgan = ${morgan}`);
-  console.log(`Path = ${path}`);
 });
