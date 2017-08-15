@@ -15,3 +15,13 @@ function changeText() {
     console.log(text);
     document.getElementById("Hi").innerHTML = text;
 }
+
+var img = document.getElementById("img");
+
+function moveRight() {
+    
+}
+
+img.onclick = function() {
+    var interval = setInterval(moveRight, 100);
+}
