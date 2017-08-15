@@ -12,5 +12,6 @@ function makeText() {
 
 function changeText() {
     var text = makeText();
+    console.log(text);
     document.getElementById("Hi").innerHTML = text;
 }
