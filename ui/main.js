@@ -10,7 +10,7 @@ function makeText() {
   return "New String: " + text;
 }
 
-function ChangeText() {
+function changeText() {
     var text = makeText();
     document.getElementById("").innerHTML = "";
 }
