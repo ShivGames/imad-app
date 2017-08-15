@@ -5,6 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articles = {
+    articleOne: {
+        title: 'Article One',
+        heading: 'Article One',
+        content: 'Hello!'
+    }
+}
+
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
