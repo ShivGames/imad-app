@@ -10,6 +10,22 @@ var articles = {
         title: 'Article One',
         heading: 'Article One',
         content: 'Hello!'
+    },
+    articleTwo: {
+        title: 'Article Two',
+        heading: 'Article Two',
+        content: `
+            <p>
+                My second webpage! My second webpage!My second webpage!My second webpage!My second webpage!My second webpage!
+                My second webpage! My second webpage!  My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! 
+            </p>
+            <p>
+                My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! 
+            </p>
+            <p>
+                My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! My second webpage! 
+            </p>
+        `
     }
 }
 
