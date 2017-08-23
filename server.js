@@ -4,7 +4,7 @@ var path = require('path');
 
 var config = {
     user: 'coco98',
-    database: 'coco98'
+    database: 'coco98',
     host: 'db.imad.hasura.io'
 };
 
