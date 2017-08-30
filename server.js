@@ -10,7 +10,7 @@ var config = {
     database: 'raghuramankal30',
     host: 'db.imad.hasura-app.io',
     port:'5432',
-    password: process.env.DB_PASSWORD
+    password: 'db-raghuramankal30-78765'
 };
 var articles = {
     'article-one': {
