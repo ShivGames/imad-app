@@ -2,19 +2,14 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
-
+var app = express();
+app.use(morgan('combined'));
 var config = {
     user: 'coco98',
     database: 'coco98',
     host: 'db.imad.hasura-app.io',
     password: process.env.DB_PASSWORD
 };
-
-var pool = require('pg').Pool;
-
-var app = express();
-app.use(morgan('combined'));
-
 var articles = {
     'article-one': {
         title: 'Article One',
@@ -39,6 +34,8 @@ var articles = {
     }
 };
 
+//// FUNCTIONS ////
+
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
@@ -60,8 +57,6 @@ function createTemplate(data) {
 }
 
 // Pages
-
-
 
 var pool = new Pool(config);
 app.get('/test-db', function(req, res) {
